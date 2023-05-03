@@ -49,6 +49,7 @@
 
 ### 🧩 MTV 패턴이란?
 `Model` `Template` `View`로 MVC에 대응되는 Django의 디자인 패턴
+![MTV 패턴](https://user-images.githubusercontent.com/97721883/235830848-61288e07-bdc6-439e-9236-ae54ba8b1b0d.PNG)
 
 #### Model
 * MVC 패턴의 `Model`에 대응
