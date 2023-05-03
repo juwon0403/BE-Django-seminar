@@ -18,7 +18,7 @@
 
 &rarr; 유지보수성 · 확장성 · 유연성 증가, 중복 코딩의 문제 해결
 
-![MVC 패턴](https://user-images.githubusercontent.com/97721883/235828929-70918b9d-a8e5-45bc-a1bb-28ce64b29819.PNG)
+![MVC 패턴](https://user-images.githubusercontent.com/97721883/235830787-0a8ddb11-6b08-4d6e-815e-d52ac487157b.PNG)
 
 #### Model
 * 데이터와 상호작용
