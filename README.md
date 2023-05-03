@@ -98,3 +98,5 @@
     <td>View</td>
   </tr>
 </table>
+
+![Django 디자인 패턴](https://user-images.githubusercontent.com/97721883/235831177-891da75b-2738-416d-ae1c-37d214e91d68.PNG)
