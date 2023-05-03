@@ -18,21 +18,25 @@
 
 &rarr; 유지보수성 · 확장성 · 유연성 증가, 중복 코딩의 문제 해결
 
->`Model`
->* 데이터와 상호작용
->* `Model`에 정의된 내용을 바탕으로 DB에 데이터 저장
->* Django의 `Model`에 정의된 1개의 class = DB의 1개의 table
->* `View`나 `Controller`의 정보 포함하면 안됨
+![MVC 패턴](https://user-images.githubusercontent.com/97721883/235828929-70918b9d-a8e5-45bc-a1bb-28ce64b29819.PNG)
 
->`View`
->* 사용자 인터페이스 담당
->* 데이터 입력/출력/전달하는 역할
->* `View` 자체에 데이터가 저장되어서는 안됨
+#### Model
+* 데이터와 상호작용
+* `Model`에 정의된 내용을 바탕으로 DB에 데이터 저장
+* Django의 `Model`에 정의된 1개의 class = DB의 1개의 table
+* `View`나 `Controller`의 정보 포함하면 안됨
 
->`Controller`
->* `Model`과 `View` 연결
->* 데이터 입력/조회하는 사용자의 모든 행동을 처리하는 역할
->* `Model` `View`와 달리 사용자의 정보 모두 포함
+#### View
+* 사용자 인터페이스 담당
+* 데이터 입력/출력/전달하는 역할
+* `View` 자체에 데이터가 저장되어서는 안됨
+
+#### Controller
+* `Model`과 `View` 연결
+* 데이터 입력/조회하는 사용자의 모든 행동을 처리하는 역할
+* `Model` `View`와 달리 사용자의 정보 모두 포함
+
+<br>
 
 >#### MVC 패턴을 웹에 적용하면?
 >1. 사용자가 웹사이트에 접속
@@ -46,21 +50,25 @@
 ### 🧩 MTV 패턴이란?
 `Model` `Template` `View`로 MVC에 대응되는 Django의 디자인 패턴
 
->`Model`
->* MVC 패턴의 `Model`에 대응
->* `Model`에 정의된 내용을 바탕으로 DB에 데이터 저장
->* Django의 `Model`에 정의된 1개의 class = DB의 1개의 table
->* Django는 ORM(Object Relational Mapping) 기능을 지원하기 때문에 python 코드로 DB 조작 가능
+#### Model
+* MVC 패턴의 `Model`에 대응
+* `Model`에 정의된 내용을 바탕으로 DB에 데이터 저장
+* Django의 `Model`에 정의된 1개의 class = DB의 1개의 table
+* Django는 ORM(Object Relational Mapping) 기능을 지원하기 때문에 python 코드로 DB 조작 가능
 
->`Template`
->* MVC 패턴의 `View`에 대응
->* Django는 `View`에서 로직 처리한 후 html 파일을 context와 함께 렌더링, 여기서 html 파일이 `Template`
->* Django의 자체적인 Django Template 문법 덕분에 html 파일 내에서 context로 받은 데이터 활용 가능
+#### Template
+* MVC 패턴의 `View`에 대응
+* Django는 `View`에서 로직 처리한 후 html 파일을 context와 함께 렌더링, 여기서 html 파일이 `Template`
+* Django의 자체적인 Django Template 문법 덕분에 html 파일 내에서 context로 받은 데이터 활용 가능
 
->`View`
->* MVC 패턴의 `Controller`에 대응
->* 요청에 따른 적절한 로직을 수행하여 결과를 `Template`으로 렌더링하며 응답
->* `Template`으로 렌더링하거나 백엔드에서 데이터만 주고받기도 함
+#### View
+* MVC 패턴의 `Controller`에 대응
+* 요청에 따른 적절한 로직을 수행하여 결과를 `Template`으로 렌더링하며 응답
+* `Template`으로 렌더링하거나 백엔드에서 데이터만 주고받기도 함
+
+#### URLconf
+* 장고만의 차이점
+* `View`와 `Template`을 이어주는 역할
 
 ---
 
