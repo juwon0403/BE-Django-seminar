@@ -4,7 +4,7 @@
 **MVC 패턴**를 기반으로 한 **MTV 패턴**이 적용된 웹 **프레임워크**
 
 >#### 프레임워크란?
->소프트웨어의 구체적인 부분에 해당하는 설계와 구현을 **재사용**이 가능하게끔 일련의 협업화된 형태로 클래스들을 제공하는 것
+>소프트웨어의 설계와 구현을 **재사용**이 가능하도록 일련의 협업화된 형태로 클래스들을 제공하는 것
 >* 회원가입, 로그인/로그아웃 등 사용자 정보를 다루는 기능에 대한 클래스
 >* 백엔드에서 움직이는 데이터를 처리하고 저장하는 방식에 대한 클래스
 
@@ -22,7 +22,6 @@
 
 #### Model
 * 데이터와 상호작용
-* `Model`에 정의된 내용을 바탕으로 DB에 데이터 저장
 * Django의 `Model`에 정의된 1개의 class = DB의 1개의 table
 * `View`나 `Controller`의 정보 포함하면 안됨
 
@@ -33,7 +32,7 @@
 
 #### Controller
 * `Model`과 `View` 연결
-* 데이터 입력/조회하는 사용자의 모든 행동을 처리하는 역할
+* 사용자의 모든 행동을 처리, 로직 수행하는 역할
 * `Model` `View`와 달리 사용자의 정보 모두 포함
 
 <br>
@@ -48,13 +47,12 @@
 #
 
 ### 🧩 MTV 패턴이란?
-`Model` `Template` `View`로 MVC에 대응되는 Django의 디자인 패턴
+`Model` `Template` `View` + `URLconf`로 MVC에 대응되는 Django의 디자인 패턴
 
 ![MTV 패턴](https://user-images.githubusercontent.com/97721883/235831075-7cfb4879-9a1f-46c1-a7de-69d923464ebd.PNG)
 
 #### Model
 * MVC 패턴의 `Model`에 대응
-* `Model`에 정의된 내용을 바탕으로 DB에 데이터 저장
 * Django의 `Model`에 정의된 1개의 class = DB의 1개의 table
 * Django는 ORM(Object Relational Mapping) 기능을 지원하기 때문에 python 코드로 DB 조작 가능
 
@@ -70,7 +68,7 @@
 
 #### URLconf
 * 장고만의 차이점
-* `View`와 `Template`을 이어주는 역할
+* URL 패턴을 정의하여 해당 URL과 `View`를 매핑
 
 ---
 
