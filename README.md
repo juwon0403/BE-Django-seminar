@@ -39,11 +39,11 @@
 <br>
 
 >#### MVC 패턴을 웹에 적용하면?
->1. 사용자가 웹사이트에 접속
->2. `Controller`는 사용자가 요청한 웹사이트를 서비스하기 위해 `Model` 호출
+>1. 사용자가 웹사이트에 접속 &rarr; **Uses**
+>2. `Controller`는 사용자가 요청한 웹사이트를 서비스하기 위해 `Model` 호출 &rarr; **Manipulates**
 >3. `Model`은 DB나 파일과 같은 데이터 소스를 제어한 후 그 결과를 리턴
->4. `Controller`는 `Model`이 리턴한 결과를 `View`에 반영
->5. 데이터가 반영된 `View`가 사용자에게 보여짐
+>4. `Controller`는 `Model`이 리턴한 결과를 `View`에 반영 &rarr; **Updates**
+>5. 데이터가 반영된 `View`가 사용자에게 보여짐 &rarr; **Sees**
 
 #
 
